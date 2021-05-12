@@ -4,7 +4,7 @@
 //  Created by Edwin Vermeer on 29/01/2017.
 //  Copyright © 2017 EVICT BV. All rights reserved.
 //
-
+import UIKit
 /**
  Test if the app is launche with a specific parameter.
  

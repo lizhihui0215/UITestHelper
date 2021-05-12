@@ -20,12 +20,9 @@
       location = "group:UITestHelper.podspec">
    </FileRef>
    <FileRef
-      location = "group:Source">
-   </FileRef>
-   <FileRef
       location = "group:UITestHelper.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:iOS Example/iOS Example.xcodeproj">
    </FileRef>
 </Workspace>

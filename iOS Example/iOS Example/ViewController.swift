@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import UITestHelper
 
 class ViewController: UIViewController {
 
