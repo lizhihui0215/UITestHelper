@@ -20,7 +20,7 @@ extension Screen: SnapshotTestCase {
     }
 }
 
-class Screen {
+open class Screen {
     final public let testable: UITestable
     
     public var app: XCUIApplication {
@@ -31,7 +31,7 @@ class Screen {
         fatalError("subclass must overide this property to identify current element")
     }
     
-    init(_ testable: UITestable,
+    public init(_ testable: UITestable,
          file: StaticString = #file,
          function: StaticString = #function,
          line: Int = #line) {
@@ -39,7 +39,7 @@ class Screen {
         identiableElement.waitUntilExists()
     }
     
-    func verifyView(snapshotName: String? = nil,
+    public func verifyView(snapshotName: String? = nil,
                     tolerence: CGFloat = 0,
                     file: StaticString = #file,
                     line: UInt = #line) -> Self {

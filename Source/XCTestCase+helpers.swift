@@ -12,7 +12,7 @@ public protocol UITestable: XCTestCase {
 
 }
 
-protocol SnapshotTestCase {
+public protocol SnapshotTestCase {
     var snapshotTestCase: FBSnapshotTestCase { get }
 }
 
