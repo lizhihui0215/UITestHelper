@@ -6,7 +6,15 @@
 //
 
 import XCTest
+import FBSnapshotTestCase
 
+public protocol UITestable: XCTestCase {
+
+}
+
+protocol SnapshotTestCase {
+    var snapshotTestCase: FBSnapshotTestCase { get }
+}
 
 extension String : RawRepresentable {
     public init?(rawValue: String) {
