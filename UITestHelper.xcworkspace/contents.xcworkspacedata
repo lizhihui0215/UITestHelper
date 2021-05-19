@@ -14,9 +14,6 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
-      location = "group:Podfile">
-   </FileRef>
-   <FileRef
       location = "group:UITestHelper.podspec">
    </FileRef>
    <FileRef

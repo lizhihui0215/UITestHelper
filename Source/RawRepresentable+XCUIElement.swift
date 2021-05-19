@@ -103,6 +103,17 @@ public extension RawRepresentable {
     }
     
     @discardableResult
+    func clearAndType(_ text: String, _ timeout: TimeInterval = 10) -> XCUIElement {
+        return self.clear(timeout).tapAndType(text, timeout)
+    }
+    
+    
+    @discardableResult
+    func clear(_ timeout: TimeInterval = 10) -> XCUIElement {
+        element.clear(timeout)
+    }
+    
+    @discardableResult
     func setSwitch(_ on: Bool, _ timeout: TimeInterval = 10) -> XCUIElement  {
         return element.setSwitch(on, timeout)
     }

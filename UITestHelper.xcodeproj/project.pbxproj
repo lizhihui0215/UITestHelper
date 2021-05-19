@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2605FECD26556AA50045CABA /* FBSnapshotTestCase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265EC5412652B63D00E4EB41 /* FBSnapshotTestCase.xcframework */; };
 		265EC53F265285E500E4EB41 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265EC53E265285E500E4EB41 /* Screen.swift */; };
-		265EC5422652B63E00E4EB41 /* FBSnapshotTestCase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265EC5412652B63D00E4EB41 /* FBSnapshotTestCase.xcframework */; };
 		26F37393264B895C009BBCAE /* UITestHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F3738A264B895B009BBCAE /* UITestHelper.framework */; };
 		26F37398264B895C009BBCAE /* UITestHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F37397264B895C009BBCAE /* UITestHelperTests.swift */; };
 		26F37441264B98E3009BBCAE /* XCUIElement+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F3743B264B98E3009BBCAE /* XCUIElement+helpers.swift */; };
@@ -31,6 +31,7 @@
 /* Begin PBXFileReference section */
 		13D5E72F75F79FB57BF6E1D1 /* Pods-UITestHelperApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestHelperApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITestHelperApp/Pods-UITestHelperApp.debug.xcconfig"; sourceTree = "<group>"; };
 		18BB0B8A63042C713FBAEA73 /* Pods-UITestHelperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestHelperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITestHelperUITests/Pods-UITestHelperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2605FEBE265552BC0045CABA /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		265EC53E265285E500E4EB41 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		265EC5412652B63D00E4EB41 /* FBSnapshotTestCase.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSnapshotTestCase.xcframework; path = Carthage/Build/FBSnapshotTestCase.xcframework; sourceTree = "<group>"; };
 		26F3738A264B895B009BBCAE /* UITestHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UITestHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26F3746D264B9BDF009BBCAE /* XCTest.framework in Frameworks */,
-				265EC5422652B63E00E4EB41 /* FBSnapshotTestCase.xcframework in Frameworks */,
+				2605FECD26556AA50045CABA /* FBSnapshotTestCase.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +132,7 @@
 		C71190D47CD362DAFD15723D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2605FEBE265552BC0045CABA /* FBSnapshotTestCase.framework */,
 				265EC5412652B63D00E4EB41 /* FBSnapshotTestCase.xcframework */,
 				26F3746C264B9BDE009BBCAE /* XCTest.framework */,
 				38FFA42FA9C58CD307C6A96B /* Pods_UITestHelper.framework */,

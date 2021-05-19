@@ -8,8 +8,8 @@
 import XCTest
 import FBSnapshotTestCase
 
-public protocol UITestable: XCTestCase {
-
+public protocol UITestable {
+    var app: XCUIApplication { get }
 }
 
 public protocol SnapshotTestCase {

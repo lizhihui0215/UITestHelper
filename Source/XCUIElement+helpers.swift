@@ -159,6 +159,19 @@ public extension XCUIElement {
         return self
     }
     
+    @discardableResult
+    func clear(_ timeout: TimeInterval = 10) -> XCUIElement {
+        guard let stringValue = self.value as? String else { return self }
+        
+        self.waitUntilExists(timeout).tap()
+        sleep(1) //Wait for keyboard... test?
+
+        let deleteString = String(repeating: XCUIKeyboardKey.delete.rawValue, count: stringValue.count)
+        self.typeText(deleteString)
+        
+        return self
+    }
+    
     /**
      Perform this function on a switch element if you want to wait until it's available and then turn it on or off.
      
